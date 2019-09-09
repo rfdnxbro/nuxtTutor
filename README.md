@@ -3,13 +3,13 @@
 ## 構成
 
 * Nuxt 2.9.x
-* Vuetify
+* Bulma
+* axios
 * Sass-loader
-* firebase
-  * Hosting
-  * Functions
-  * Firestore
-  * Storage
+* ESLint
+* Jest
+
+
 
 ## 必要なもの
 
@@ -21,9 +21,9 @@
 1. ターミナルで実行
 
 ```
-git clone -b Nuxt https://github.com/fussy113/MyNodeDock.git
+git clone https://github.com/fussy113/nuxtTutor.git
 
-cd MyNodeDock
+cd nuxtTutor
 
 # envファイルは適宜変更してください
 cp .env.example .env
