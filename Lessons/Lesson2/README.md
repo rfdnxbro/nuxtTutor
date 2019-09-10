@@ -51,3 +51,5 @@ cp .env.example .env
 ```
 
 * http://localhost:3000でアクセスができます。
+
+# **Hello Nuxt World！！**
