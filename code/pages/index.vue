@@ -49,7 +49,7 @@
             <th>{{ user.id }}</th>
             <td>{{ user.name }}</td>
             <td>{{ user.email }}</td>
-            <td>{{ user.description }}</td>
+            <td><user-modal :user="user" />{{ user.description }}</td>
           </tr>
         </tbody>
       </table>
@@ -95,9 +95,12 @@
 </template>
 
 <script>
+import UserModal from '~/components/UserModal.vue'
 
 export default {
-
+  components: {
+    UserModal
+  },
   data () {
     return {
       helloText: 'Hello, Nuxt.js!!',
