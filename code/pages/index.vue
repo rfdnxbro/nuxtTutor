@@ -6,7 +6,7 @@
 
     <div id="testtext" class="box">
       <h2 class="subtitle">
-        ・テキストのバインド
+        テキストのバインド
       </h2>
       <p>下の文字は変数です</p>
       <p>{{ helloText }}</p>
@@ -14,7 +14,7 @@
 
     <div id="testform" class="box">
       <h2 class="subtitle">
-        ・双方向バインドとディレクティブ ~ if文 ~
+        双方向バインドとディレクティブ ~ if文 ~
       </h2>
       <div class="field">
         <div class="control">
@@ -33,7 +33,7 @@
 
     <div id="testroop" class="box">
       <h2 class="subtitle">
-        ・ディレクティブを利用したループ処理
+        ディレクティブを利用したループ処理
       </h2>
       <table class="table">
         <thead>
@@ -57,7 +57,7 @@
 
     <div id="testevent" class="box">
       <h2 class="subtitle">
-        ・イベント処理
+        イベント処理
       </h2>
       <p>フォームを入力して送信すると、上のリストに追加されます。</p>
       <div class="field">
@@ -182,12 +182,13 @@ export default {
   color: #526488;
   word-spacing: 5px;
   padding: 5px;
-  margin: 1.5rem 0;
+  margin-bottom: 5px!important;
 }
 
 .box {
-    font-weight: bold;
-    border: solid 3px #000000;
+  padding: 0 20px 10px;
+  font-weight: bold;
+  border: solid 3px #000000;
 }
 
 </style>
