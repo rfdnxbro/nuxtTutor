@@ -139,7 +139,7 @@ export default {
         email: this.userForm.email,
         description: this.userForm.description
       }
-      console.log(newUser)
+      this.userList.push(newUser)
       this.initializeUserForm()
     },
     // userFormの入力を初期化する。
