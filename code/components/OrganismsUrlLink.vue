@@ -1,8 +1,10 @@
 <template>
   <div class="container">
-    <!-- <a v-for="(url, index) in urlList" :key="index + 1" :href="url.href">
+    <p>通常の遷移</p>
+    <a v-for="(url, index) in urlList" :key="index + 1" :href="url.href">
       {{ url.name }}
-    </a> -->
+    </a>
+    <p>SPAの遷移</p>
     <nuxt-link v-for="(url, index) in urlList" :key="index + 1" :to="url.href">
       {{ url.name }}
     </nuxt-link>
