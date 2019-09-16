@@ -1,1 +1,1 @@
-# Lesson7 ~ SPAのぬるぬる動く遷移を行う ~
+# Lesson7 ~ Axiosを使ってAPIを叩いてみる ~
