@@ -1,5 +1,5 @@
 <template>
-  <div class="columns">
+  <div class="columns is-multiline">
     <div v-for="(user, index) in userList" :id="['user-' + (index + 1)]" :key="index" class="column is-4">
       <atoms-user-card :user="user" />
     </div>
