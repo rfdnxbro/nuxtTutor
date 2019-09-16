@@ -1,8 +1,18 @@
 <template>
   <div>
+    <organisms-url-link />
     <nuxt />
   </div>
 </template>
+
+<script>
+import OrganismsUrlLink from '~/components/OrganismsUrlLink'
+export default {
+  components: {
+    OrganismsUrlLink
+  }
+}
+</script>
 
 <style>
 html {
