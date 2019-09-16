@@ -49,7 +49,7 @@
             <th>{{ user.id }}</th>
             <td>{{ user.name }}</td>
             <td>{{ user.email }}</td>
-            <td><user-modal :user="user" />{{ user.description }}</td>
+            <td>{{ user.description }}</td>
           </tr>
         </tbody>
       </table>
@@ -91,15 +91,21 @@
         </div>
       </div>
     </div>
+    <div id="testcomponent" class="box">
+      <h2 class="subtitle">
+        使い回しできるコンポーネント
+      </h2>
+      <molecules-user-card-list :user-list="userList" />
+    </div>
   </div>
 </template>
 
 <script>
-import UserModal from '~/components/UserModal.vue'
+import MoleculesUserCardList from '~/components/MoleculesUserCardList.vue'
 
 export default {
   components: {
-    UserModal
+    MoleculesUserCardList
   },
   data () {
     return {
@@ -111,19 +117,19 @@ export default {
           id: 1,
           name: 'mochimochi',
           email: 'mochimochi@test.com',
-          description: 'ラスボス第一形態で勝てん'
+          description: 'ラスボス勝てん'
         },
         {
           id: 2,
           name: 'signal',
           email: 'signal@test.com',
-          description: 'アンジャナフ亜種に乙まじ？'
+          description: '1日18時間狩りに行く男'
         },
         {
           id: 3,
           name: 'pan',
           email: 'pan@test.com',
-          description: '夜の11とは思えない声量'
+          description: '夜の11時とは思えない声量'
         }
       ],
       userForm: {
