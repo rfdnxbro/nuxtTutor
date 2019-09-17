@@ -33,6 +33,8 @@
 </template>
 
 <script>
+// import { mapMutations } from 'vuex'
+
 export default {
   data () {
     return {
@@ -40,9 +42,15 @@ export default {
       qiitaReports: []
     }
   },
+  computed: {
+    word () {
+      return this.$store.state.searches.word
+    }
+  },
   methods: {
     async fetchData () {
       // ここの文法を覚えてもらえば
+      this.$store.commit('searches/add', this.searchTagForm)
       const res = await this.$axios.$get('https://qiita.com/api/v2/tags/' + this.searchTagForm + '/items?per_page=5')
       this.qiitaReports = res
     }
