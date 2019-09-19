@@ -3,13 +3,10 @@
 ## 構成
 
 * Nuxt 2.9.x
-* Bulma
-* axios
-* Sass-loader
-* ESLint
-* Jest
-
-
+* Bulma(cssフレームワーク)
+* axios(API叩く時に使うやつ)
+* ESLint(コードの書き方悪いと怒ってくるやつ)
+* Jest(テストコード書くやつ)
 
 ## 必要なもの
 
